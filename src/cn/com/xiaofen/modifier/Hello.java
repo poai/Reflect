@@ -21,4 +21,12 @@ public class Hello<T,S> implements Serializable{
 	public void hello (){
 		System.out.println(getMessage());
 	}
+	public Hello(String hello) {
+		this.message=hello;
+	}
+	private Hello(String hello,String t){
+		this.message=hello;
+	}
+	public Hello() {
+	}
 }
